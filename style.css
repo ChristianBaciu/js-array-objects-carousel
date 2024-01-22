@@ -5,12 +5,11 @@
 }
 
 body{
-    background-color: black
+    background-color: black;
 }
 
 .contenitore{
     height: 100vh;
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,24 +17,22 @@ body{
 }
 
 #carosello{
-    /* border: 1px solid blue; */
     position: relative;
 }
 
-.sottoCarosello{
-    /* background-color: red; */
+.logo{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.contenitore figure img{
+    width: 800px;
+    height: 400px;
 }
 
 .sottoCarosello img{
-    width: 75px;
-    height: 50px;
-}
-
-figure img{
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    display: block;
+    width: 175px;
+    border: 1px solid gray;
 }
 
 .fa-chevron-right,
@@ -53,11 +50,11 @@ figure img{
 
 .fa-chevron-left{
     left: 10%;
-    top: 125px;
+    top: 200px;
 }
 
 .fa-chevron-right{
-    top: 125px;
+    top: 200px;
     left: 90%;
 }
 
