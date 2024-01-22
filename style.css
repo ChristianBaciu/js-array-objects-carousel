@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orange;
+}
+
+.contenitore{
+    height: 100vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#carosello{
+    border: 1px solid blue;
+    position: relative;
+}
+
+/* .sottoCarosello{
+    background-color: red;
+}
+ */
+/* .sottoCarosello img{
+    width: 75px;
+    height: 50px;
+} */
+
+figure img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.fa-chevron-right,
+.fa-chevron-left{
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    padding: 7px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 10px;
+}
+
+.fa-chevron-left{
+    left: 10%;
+    top: 125px;
+}
+
+.fa-chevron-right{
+    top: 125px;
+    left: 90%;
+}
+
+/* tutte le immagini partono in d.none */
+figure img{
+    display: none;
+}
+
+/* la classe active ci permette di rendere l'immagine in d.block */
+figure img.active{
+    display: block;
+}
