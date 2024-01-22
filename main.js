@@ -6,11 +6,11 @@ const figureHtml = document.querySelector("figure")
 
 // immagini inserite nella pagina
 const images = [
-    'img carosello/Fast 1.jpg', // n0 della foto js
-    'img carosello/Fast 2.jpg', // n1 della foto js
-    'img carosello/Fast 3.jpg', // n2 della foto js
-    'img carosello/Fast 4.jpg', // n3 della foto js
-    'img carosello/Fast 5.jpg'  // n4 della foto js
+    'img carosello/Fast 1.jpg', // n0 per array
+    'img carosello/Fast 2.jpg', // n1 per array
+    'img carosello/Fast 3.jpg', // n2 per array
+    'img carosello/Fast 4.jpg', // n3 per array
+    'img carosello/Fast 5.jpg'  // n4 per array
 ]
 
 //Creare i tag img dentro figure
@@ -43,23 +43,31 @@ arrowleftHtml.addEventListener("click", function(){
     }
 
     arrayImmagini[immagineScorrevole].classList.add("active")
+    
+    // mette nella console l'immagine
+    console.log(arrayImmagini[immagineScorrevole])
 
 })
 
 // al click della freccia destra passiamo alla foto di destra
 arrowrightHtml.addEventListener("click", function(){
 
+    // con il querySelectorAll prendiamo tutte le foto dal figure img
     let arrayImmagini = document.querySelectorAll("figure img")
         
     // per non generale altre immagini
     arrayImmagini[immagineScorrevole].classList.remove("active")
 
     if(immagineScorrevole == arrayImmagini.length - 1){
+        // una volta terminato il ciclo torna all'immagine iniziale
         immagineScorrevole = 0
     }else {
         immagineScorrevole++
     }
 
     arrayImmagini[immagineScorrevole].classList.add("active")
+    
+    // mette nella console l'immagine
+    console.log(arrayImmagini[immagineScorrevole])
 
 })

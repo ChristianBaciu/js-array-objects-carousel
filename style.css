@@ -5,12 +5,12 @@
 }
 
 body{
-    background-color: orange;
+    background-color: black
 }
 
 .contenitore{
     height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,18 +18,18 @@ body{
 }
 
 #carosello{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: relative;
 }
 
-/* .sottoCarosello{
-    background-color: red;
+.sottoCarosello{
+    /* background-color: red; */
 }
- */
-/* .sottoCarosello img{
+
+.sottoCarosello img{
     width: 75px;
     height: 50px;
-} */
+}
 
 figure img{
     width: 400px;
@@ -40,7 +40,7 @@ figure img{
 
 .fa-chevron-right,
 .fa-chevron-left{
-    background-color: red;
+    background-color: white;
     opacity: 0.5;
     border-radius: 50%;
     transform: translateX(-50%);
